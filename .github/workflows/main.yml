@@ -10,11 +10,11 @@ jobs:
     steps:
       - name: Pull image
         run: |
-          docker pull apache/iotdb:1.3.4
+          docker pull apache/iotdb:1.3.4-standalone
 
       - name: Save image
         run: |
-          docker save apache/iotdb:1.3.4 -o iotdb-1.3.4.tar
+          docker save apache/iotdb:1.3.4-standalone -o iotdb-1.3.4.tar
 
       - name: Compress
         run: |
